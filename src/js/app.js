@@ -34,5 +34,5 @@ const news = [
  * 
  * Good luck :) 
  */
-
+//debugger
  console.log('js loaded!')
