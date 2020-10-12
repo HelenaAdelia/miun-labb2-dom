@@ -1,3 +1,4 @@
+
 const news = [
     {
         "headline": "Regeringen skjuter på publiklättnader",
@@ -35,4 +36,74 @@ const news = [
  * Good luck :) 
  */
 //debugger
- console.log('js loaded!')
+
+
+ console.log('js loaded')
+
+ //Exercise 1
+
+const test1= document.querySelector('#ex01')
+test1.textContent= "DONE";
+//document.getElementById('ex01').innerHTML='Done'
+
+
+//Exercise 2
+
+//document.getElementById('.ex02').className = "red";
+//element.classList.add("class"); legger til en klasse
+const test2= document.querySelector('.ex02')
+test2.className = "red"
+
+
+
+//Exercise 3
+
+const test3= document.querySelector('blockquote')
+test3.textContent= "YOLO";
+
+
+
+//Exercise 4
+
+//const shoppingList= document.getElementById('shopping-list')
+const shoppingList= document.querySelector('#shopping-list')
+   let p = document.createElement("li")
+   p.textContent= "Milk"
+shoppingList.append( p )
+
+ //Exercise 5
+
+
+
+//Exercise 6 fungerer
+
+let addMoreClicks =0;
+const update= document.querySelector('body')
+update.addEventListener('click', (e) => {
+       addMoreClicks++
+     document.getElementById('click-counter').innerHTML= addMoreClicks        
+})
+
+
+//Exercise 7
+
+const button= document.querySelector('button')
+button.addEventListener('click', (e) => {
+       button.disabled = true;      
+})
+
+//Exercise 8
+
+const link= document.querySelector('#link-to-svt');
+link.href=''
+
+// pointer-events: none;
+//link.addEventListener('pointercancel', (event) => { kanskje en løsning
+  //console.log('Pointer event cancelled');
+
+
+
+
+//Exercise 9
+//const link= document.querySelector('img src= https://unsplash.com/photos/HrAhogQIISk');
+//document.getElementById("img").src=
