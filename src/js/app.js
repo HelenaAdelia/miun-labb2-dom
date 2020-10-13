@@ -42,35 +42,28 @@ const news = [
 
  //Exercise 1
 
-const test1= document.querySelector('#ex01')
-test1.textContent= "DONE";
-//document.getElementById('ex01').innerHTML='Done'
+const test1= document.querySelector('#ex01').textContent= "DONE";
 
 
+ 
 //Exercise 2
 
-//document.getElementById('.ex02').className = "red";
 //element.classList.add("class"); legger til en klasse
-const test2= document.querySelector('.ex02')
-test2.className = "red"
+const test2= document.querySelector('.ex02').className = "red"
 
 
 
 //Exercise 3
-
-const test3= document.querySelector('blockquote')
-test3.textContent= "YOLO";
+const test3= document.querySelector('blockquote').textContent= "YOLO";
 
 
 
 //Exercise 4
+let p = document.createElement("li")
+p.textContent= "Milk"
+const shoppingList= document.querySelector('#shopping-list').append( p )
 
-//const shoppingList= document.getElementById('shopping-list')
-
-const shoppingList= document.querySelector('#shopping-list')
-   let p = document.createElement("li")
-   p.textContent= "Milk"
-shoppingList.append( p )
+ 
 
 
 //Exercise 5
