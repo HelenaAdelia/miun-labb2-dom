@@ -66,44 +66,45 @@ test3.textContent= "YOLO";
 //Exercise 4
 
 //const shoppingList= document.getElementById('shopping-list')
+
 const shoppingList= document.querySelector('#shopping-list')
    let p = document.createElement("li")
    p.textContent= "Milk"
 shoppingList.append( p )
 
- //Exercise 5
 
-
+//Exercise 5
+  let newsHTML= "" 
+  for (let i =0; i< news.length; i++){
+      newsHTML+=  ` 
+      <div class='news'></div>
+      <h3 class=>${news[i].headline}</h3>
+      <p class='summary'>${news[i].summary}</p>
+      <p class='author'> skrevet av: ${news[i].author}</p>
+      <a href= ${news[i].href} >Les mer her</a> 
+     `  
+  }
+  document.querySelector('#news').innerHTML= newsHTML
+   
 
 //Exercise 6 fungerer
-
 let addMoreClicks =0;
 const update= document.querySelector('body')
 update.addEventListener('click', (e) => {
-       addMoreClicks++
-     document.getElementById('click-counter').innerHTML= addMoreClicks        
+    addMoreClicks++
+    document.getElementById('click-counter').innerHTML= addMoreClicks        
 })
 
 
 //Exercise 7
-
 const button= document.querySelector('button')
 button.addEventListener('click', (e) => {
        button.disabled = true;      
 })
 
 //Exercise 8
-
-const link= document.querySelector('#link-to-svt');
-link.href=''
-
-// pointer-events: none;
-//link.addEventListener('pointercancel', (event) => { kanskje en løsning
-  //console.log('Pointer event cancelled');
-
-
+const link= document.querySelector('#link-to-svt').href ='javascript: void(0)'
 
 
 //Exercise 9
-//const link= document.querySelector('img src= https://unsplash.com/photos/HrAhogQIISk');
-//document.getElementById("img").src=
+document.querySelector('img').src = "https://images.unsplash.com/photo-1599423423914-a8566189fd55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80"
